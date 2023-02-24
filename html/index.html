@@ -9,13 +9,17 @@
   hello!
      <py-config>
        packages = [  "tomlkit"]
+         [[fetch]]
+         from = "https://raw.githubusercontent.com/bkleinen/searchThemes/main/"
+      files = ["theme_tags.toml"]
+
       [[fetch]]
       from = "https://raw.githubusercontent.com/bkleinen/searchThemes/main/"
-      files = ["find_tags.py"]
+      files = ["find_tags3_10.py"]
     </py-config>
     <py-script>
       print('hello wordl!')
-      from find_tags import find_tags
+      from find_tags3_10 import find_tags
     </py-script>
   </body>
 </html>
