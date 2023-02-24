@@ -6,10 +6,9 @@ toml_lib = tomlkit
 tags = ["minimal", "blog", "bootstrap"]
 tags_themes_file = 'theme_tags.toml'
 
-
 def find_tags(tags):
     tags_themes = read_list()
-    theme_lists = [tags_themes[tag] for tag in tags]
+    theme_lists = [tags_themes.get(tag, default= []) for tag in tags]
     theme_sets = [set(theme_list) for theme_list in theme_lists]
     if len(theme_sets) < 2:
         return theme_sets
@@ -19,16 +18,18 @@ def find_tags(tags):
         result = head.intersection(*tail)
         return list(result)
 
-
-
 def read_list(file=tags_themes_file):
     with open(file, "r+b") as f:
         tags_themes = toml_lib.load(f)
         return tags_themes
 
-result = find_tags(tags)
-# print(result)
-for l in result:
-    print(f'https://{l}')
+def find_themes_with_tags(tag_str):
+    tags = [ t.strip() for t in tag_str.split(",")]
+    result = find_tags(tags)
+    result_urls = [f'https://{l}' for l in result]
+    return "\n".join(result_urls)
 
-# print(str.join(result))
+
+if __name__ == '__main__':
+    r = find_themes_with_tags("bootstrap, blog, minimal")
+    print(r)
