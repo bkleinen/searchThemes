@@ -132,6 +132,11 @@ simple = [
     "github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme",
     "github.com/zzossig/hugo-theme-zdoc",
     "github.com/zzossig/hugo-theme-zzo",
+    "gitlab.com/gabmus/hugo-ficurinia",
+    "gitlab.com/ian-s-mcb/smigle-hugo-theme",
+    "gitlab.com/kskarthik/monopriv",
+    "gitlab.com/mertbakir/resume-a4",
+    "gitlab.com/VincentTam/huginn",
 ]
 blog = [
     "github.com/10mohi6/hugo-theme-simple-blog",
@@ -410,6 +415,19 @@ blog = [
     "github.com/zwbetz-gh/papercss-hugo-theme",
     "github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme",
     "github.com/zzossig/hugo-theme-zzo",
+    "gitlab.com/avron/gruvhugo",
+    "gitlab.com/gabmus/hugo-ficurinia",
+    "gitlab.com/ian-s-mcb/smigle-hugo-theme",
+    "gitlab.com/Kaligule/classless-blog",
+    "gitlab.com/kskarthik/monopriv",
+    "gitlab.com/kskarthik/resto-hugo",
+    "gitlab.com/m-e-leypold/brutalist-minimalist-gohugo-theme",
+    "gitlab.com/maxlefou/hugo.386",
+    "gitlab.com/rmaguiar/hugo-theme-color-your-world",
+    "gitlab.com/tmuguet/hugo-split-gallery",
+    "gitlab.com/VincentTam/huginn",
+    "gitlab.com/writeonlyhugo/up-business-theme",
+    "gitlab.com/writeonlyhugo/writeonlyhugo-theme",
     "github.com/nusserstudios/tailbliss",
 ]
 responsive = [
@@ -637,6 +655,14 @@ responsive = [
     "github.com/zzossig/hugo-theme-zdoc",
     "github.com/zzossig/hugo-theme-zzo",
     "github.com/zzzmisa/hugo-theme-doors",
+    "gitlab.com/ian-s-mcb/smigle-hugo-theme",
+    "gitlab.com/Kaligule/classless-blog",
+    "gitlab.com/kskarthik/monopriv",
+    "gitlab.com/rmaguiar/hugo-theme-color-your-world",
+    "gitlab.com/tmuguet/hugo-split-gallery",
+    "gitlab.com/VincentTam/huginn",
+    "gitlab.com/writeonlyhugo/up-business-theme",
+    "gitlab.com/writeonlyhugo/writeonlyhugo-theme",
     "github.com/nusserstudios/tailbliss",
 ]
 minimal = [
@@ -804,6 +830,11 @@ minimal = [
     "github.com/zhaohuabing/hugo-theme-cleanwhite",
     "github.com/zhe/hugo-theme-slim",
     "github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme",
+    "gitlab.com/avron/gruvhugo",
+    "gitlab.com/ian-s-mcb/smigle-hugo-theme",
+    "gitlab.com/Kaligule/classless-blog",
+    "gitlab.com/kskarthik/monopriv",
+    "gitlab.com/kskarthik/resto-hugo",
     "github.com/nusserstudios/tailbliss",
 ]
 clean = [
@@ -942,6 +973,9 @@ clean = [
     "github.com/zwbetz-gh/cayman-hugo-theme",
     "github.com/zwbetz-gh/minimal-bootstrap-hugo-theme",
     "github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme",
+    "gitlab.com/ian-s-mcb/smigle-hugo-theme",
+    "gitlab.com/kskarthik/monopriv",
+    "gitlab.com/kskarthik/resto-hugo",
 ]
 light = [
     "github.com/10mohi6/hugo-theme-simple-blog",
@@ -1034,6 +1068,12 @@ light = [
     "github.com/zhaohuabing/hugo-theme-cleanwhite",
     "github.com/zzossig/hugo-theme-zdoc",
     "github.com/zzossig/hugo-theme-zzo",
+    "gitlab.com/avron/gruvhugo",
+    "gitlab.com/ian-s-mcb/smigle-hugo-theme",
+    "gitlab.com/kskarthik/monopriv",
+    "gitlab.com/rmaguiar/hugo-theme-color-your-world",
+    "gitlab.com/writeonlyhugo/up-business-theme",
+    "gitlab.com/writeonlyhugo/writeonlyhugo-theme",
     "github.com/nusserstudios/tailbliss",
 ]
 personal = [
@@ -1150,6 +1190,9 @@ personal = [
     "github.com/Yukuro/hugo-theme-shell",
     "github.com/yursan9/manis-hugo-theme",
     "github.com/zerostaticthemes/hugo-serif-theme",
+    "gitlab.com/rmaguiar/hugo-theme-color-your-world",
+    "gitlab.com/writeonlyhugo/up-business-theme",
+    "gitlab.com/writeonlyhugo/writeonlyhugo-theme",
     "github.com/nusserstudios/tailbliss",
 ]
 bootstrap = [
@@ -1195,6 +1238,9 @@ bootstrap = [
     "github.com/zerostaticthemes/hugo-whisper-theme",
     "github.com/zwbetz-gh/minimal-bootstrap-hugo-theme",
     "github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme",
+    "gitlab.com/kskarthik/monopriv",
+    "gitlab.com/writeonlyhugo/up-business-theme",
+    "gitlab.com/writeonlyhugo/writeonlyhugo-theme",
 ]
 customizable = [
     "github.com/10mohi6/hugo-theme-simple-blog",
@@ -1234,6 +1280,8 @@ customizable = [
     "github.com/unicef/inventory-hugo-theme",
     "github.com/wowchemy/starter-hugo-academic",
     "github.com/your-identity/hugo-theme-dimension",
+    "gitlab.com/avron/gruvhugo",
+    "gitlab.com/gabmus/hugo-ficurinia",
 ]
 hugo = [
     "github.com/10mohi6/hugo-theme-simple-blog",
@@ -1328,6 +1376,8 @@ portfolio = [
     "github.com/Yukuro/hugo-theme-shell",
     "github.com/zerostaticthemes/hugo-hero-theme",
     "github.com/zzzmisa/hugo-theme-doors",
+    "gitlab.com/ian-s-mcb/smigle-hugo-theme",
+    "gitlab.com/writeonlyhugo/up-business-theme",
     "github.com/nusserstudios/tailbliss",
 ]
 business = [
@@ -1339,6 +1389,7 @@ business = [
     "github.com/jmablog/hugo-clinic-notes",
     "github.com/SAGGameDeveloper/hugo-minimalist-spa",
     "github.com/tylerjlawson/simple-snipcart-shop",
+    "gitlab.com/kskarthik/resto-hugo",
 ]
 projects = [
     "github.com/2-REC/hugo-myportfolio-theme",
@@ -1446,6 +1497,8 @@ dark = [
     "github.com/zwbetz-gh/cupper-hugo-theme",
     "github.com/zzossig/hugo-theme-zdoc",
     "github.com/zzossig/hugo-theme-zzo",
+    "gitlab.com/gabmus/hugo-ficurinia",
+    "gitlab.com/rmaguiar/hugo-theme-color-your-world",
     "github.com/nusserstudios/tailbliss",
 ]
 highlighting = [
@@ -1454,6 +1507,7 @@ highlighting = [
     "github.com/panr/hugo-theme-terminal",
     "github.com/rhazdon/hugo-theme-hello-friend-ng",
     "github.com/your-identity/hugo-theme-dimension",
+    "gitlab.com/rmaguiar/hugo-theme-color-your-world",
 ]
 monochromatic = [
     "github.com/4s3ti/hugo-theme-hello-4s3ti",
@@ -1499,6 +1553,7 @@ multilingual = [
     "github.com/Xzya/hugo-material-blog",
     "github.com/zzossig/hugo-theme-zdoc",
     "github.com/zzossig/hugo-theme-zzo",
+    "gitlab.com/rmaguiar/hugo-theme-color-your-world",
 ]
 technical = [
     "github.com/4s3ti/hugo-theme-hello-4s3ti",
@@ -1516,6 +1571,7 @@ technical = [
     "github.com/s4n7h0/hugo-theme-timeline",
     "github.com/wowchemy/starter-hugo-academic",
     "github.com/zzossig/hugo-theme-zzo",
+    "gitlab.com/rmaguiar/hugo-theme-color-your-world",
 ]
 OnlineCV = [
     "github.com/4s3ti/terminalcv",
@@ -1563,6 +1619,9 @@ modern = [
     "github.com/uicardiodev/hugo-sodium-theme",
     "github.com/uicardiodev/hugo-uilite",
     "github.com/wowchemy/starter-hugo-academic",
+    "gitlab.com/avron/gruvhugo",
+    "gitlab.com/rmaguiar/hugo-theme-color-your-world",
+    "gitlab.com/writeonlyhugo/up-business-theme",
 ]
 minimalist = [
     "github.com/achary/engimo",
@@ -1630,6 +1689,7 @@ minimalist = [
     "github.com/yihui/hugo-xmag",
     "github.com/yihui/hugo-xmin",
     "github.com/zwbetz-gh/minimal-bootstrap-hugo-theme",
+    "gitlab.com/rmaguiar/hugo-theme-color-your-world",
 ]
 engineering = [
     "github.com/achary/engimo",
@@ -1685,6 +1745,7 @@ search = [
     "github.com/zhaohuabing/hugo-theme-cleanwhite",
     "github.com/zzossig/hugo-theme-zdoc",
     "github.com/zzossig/hugo-theme-zzo",
+    "gitlab.com/rmaguiar/hugo-theme-color-your-world",
 ]
 faq = [
     "github.com/aerohub/hugo-faq-theme",
@@ -1748,6 +1809,7 @@ social = [
     "github.com/vantagedesign/ace-documentation",
     "github.com/Vimux/Binario",
     "github.com/Xzya/hugo-material-blog",
+    "gitlab.com/toryanderson/hugo-icarus",
 ]
 cv = [
     "github.com/aerohub/hugo-orbit-theme",
@@ -1775,6 +1837,7 @@ resume = [
     "github.com/st-wong/hugo-spectre-pixel-theme",
     "github.com/tylerjlawson/simple-resume",
     "github.com/wowchemy/starter-hugo-academic",
+    "gitlab.com/mertbakir/resume-a4",
 ]
 "colour schemes" = [
     "github.com/aerohub/hugo-orbit-theme",
@@ -1908,6 +1971,7 @@ mobile = [
     "github.com/zzossig/hugo-theme-zdoc",
     "github.com/zzossig/hugo-theme-zzo",
     "github.com/zzzmisa/hugo-theme-doors",
+    "gitlab.com/avron/gruvhugo",
 ]
 disqus = [
     "github.com/alex-shpak/hugo-book",
@@ -2038,6 +2102,8 @@ gallery = [
     "github.com/wowchemy/starter-hugo-academic",
     "github.com/zzossig/hugo-theme-zzo",
     "github.com/zzzmisa/hugo-theme-doors",
+    "gitlab.com/tmuguet/hugo-split-gallery",
+    "gitlab.com/toryanderson/hugo-icarus",
     "github.com/nusserstudios/tailbliss",
 ]
 "one page" = [
@@ -2065,6 +2131,8 @@ gallery = [
     "github.com/victoriadrake/hugo-theme-introduction",
     "github.com/wowchemy/starter-hugo-academic",
     "github.com/zzzmisa/hugo-theme-doors",
+    "gitlab.com/kskarthik/resto-hugo",
+    "gitlab.com/mertbakir/resume-a4",
 ]
 tailwind = [
     "github.com/apvarun/showcase-hugo-theme",
@@ -2121,6 +2189,7 @@ starter = [
     "github.com/vantagedesign/ace-documentation",
     "github.com/victoriadrake/hugo-theme-introduction",
     "github.com/wayjam/hugo-theme-fluency",
+    "gitlab.com/toryanderson/hugo-icarus",
 ]
 fast = [
     "github.com/asurbernardo/amperage",
@@ -2157,6 +2226,9 @@ fast = [
     "github.com/wileybaba/hugo-theme-robotico",
     "github.com/wlh320/hugo-theme-hulga",
     "github.com/zzossig/hugo-theme-zzo",
+    "gitlab.com/ian-s-mcb/smigle-hugo-theme",
+    "gitlab.com/kskarthik/monopriv",
+    "gitlab.com/rmaguiar/hugo-theme-color-your-world",
 ]
 minimalistic = [
     "github.com/asurbernardo/amperage",
@@ -2199,12 +2271,14 @@ rss = [
     "github.com/pfadfinder-konstanz/hugo-dpsg",
     "github.com/RononDex/interstellar-hugo",
     "github.com/st-wong/hugo-spectre-pixel-theme",
+    "gitlab.com/toryanderson/hugo-icarus",
 ]
 widgets = [
     "github.com/balaramadurai/hugo-travelify-theme",
     "github.com/ijsucceed/onepress",
     "github.com/pfadfinder-konstanz/hugo-dpsg",
     "github.com/wowchemy/starter-hugo-academic",
+    "gitlab.com/toryanderson/hugo-icarus",
 ]
 carousel = [
     "github.com/balaramadurai/hugo-travelify-theme",
@@ -2283,6 +2357,7 @@ jekyll = [
     "github.com/softwareyoga/ronu-hugo-theme",
     "github.com/splch/hugo-simplecss",
     "github.com/willfaught/paige",
+    "gitlab.com/avron/gruvhugo",
 ]
 html5up = [
     "github.com/caressofsteel/hugo-story",
@@ -2343,6 +2418,7 @@ Invision = [
     "github.com/miguelsimoni/hugo-initio",
     "github.com/RCJacH/hugo-webslides",
     "github.com/wowchemy/starter-hugo-academic",
+    "gitlab.com/avron/gruvhugo",
 ]
 opensource = [
     "github.com/cdeck3r/OneDly-Theme",
@@ -2352,6 +2428,8 @@ privacy = [
     "github.com/chringel21/chringel-hugo-theme",
     "github.com/colorchestra/smol",
     "github.com/LukasJoswiak/etch",
+    "gitlab.com/ian-s-mcb/smigle-hugo-theme",
+    "gitlab.com/kskarthik/monopriv",
 ]
 Blog = [
     "github.com/chringel21/chringel-hugo-theme",
@@ -2386,12 +2464,16 @@ Pacman = [
 ]
 monospace = [
     "github.com/colorchestra/smol",
+    "gitlab.com/ian-s-mcb/smigle-hugo-theme",
+    "gitlab.com/kskarthik/monopriv",
 ]
 no-js = [
     "github.com/colorchestra/smol",
+    "gitlab.com/ian-s-mcb/smigle-hugo-theme",
 ]
 no-tracking = [
     "github.com/colorchestra/smol",
+    "gitlab.com/ian-s-mcb/smigle-hugo-theme",
 ]
 home = [
     "github.com/cowboysmall-tools/hugo-business-frontpage-theme",
@@ -2500,6 +2582,7 @@ sepia = [
     "github.com/StaticMania/portio-hugo",
     "github.com/unicef/inventory-hugo-theme",
     "github.com/wowchemy/starter-hugo-academic",
+    "gitlab.com/rmaguiar/hugo-theme-color-your-world",
 ]
 "google fonts" = [
     "github.com/danielkvist/hugo-piercer-theme",
@@ -2525,6 +2608,7 @@ company = [
     "github.com/wowchemy/starter-hugo-academic",
     "github.com/zerostaticthemes/hugo-hero-theme",
     "github.com/zerostaticthemes/hugo-serif-theme",
+    "gitlab.com/writeonlyhugo/up-business-theme",
     "github.com/nusserstudios/tailbliss",
 ]
 accessibility = [
@@ -2977,6 +3061,7 @@ landing = [
     "github.com/jeblister/bulma",
     "github.com/KatamariJr/split-landing",
     "github.com/willfaught/paige",
+    "gitlab.com/writeonlyhugo/up-business-theme",
 ]
 themes = [
     "github.com/jeblister/bulma",
@@ -3052,6 +3137,7 @@ backgrounds = [
 staticman = [
     "github.com/jpescador/hugo-future-imperfect",
     "github.com/onweru/hugo-swift-theme",
+    "gitlab.com/VincentTam/huginn",
 ]
 changelog = [
     "github.com/jsnjack/hugo-changelog-theme",
@@ -3088,6 +3174,7 @@ accessible = [
     "github.com/zwbetz-gh/cupper-hugo-theme",
     "github.com/zzossig/hugo-theme-zdoc",
     "github.com/zzossig/hugo-theme-zzo",
+    "gitlab.com/rmaguiar/hugo-theme-color-your-world",
 ]
 multilangual = [
     "github.com/khusika/FeelIt",
@@ -3237,6 +3324,7 @@ monotone = [
 retro = [
     "github.com/mrmierzejewski/hugo-theme-console",
     "github.com/panr/hugo-theme-terminal",
+    "gitlab.com/maxlefou/hugo.386",
 ]
 animation = [
     "github.com/mrmierzejewski/hugo-theme-console",
@@ -3630,4 +3718,22 @@ informal = [
 ]
 feather = [
     "github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme",
+]
+gruvbox = [
+    "gitlab.com/avron/gruvhugo",
+]
+geek = [
+    "gitlab.com/maxlefou/hugo.386",
+]
+"bootstra.386" = [
+    "gitlab.com/maxlefou/hugo.386",
+]
+"hugo.386" = [
+    "gitlab.com/maxlefou/hugo.386",
+]
+maxthjax = [
+    "gitlab.com/toryanderson/hugo-icarus",
+]
+isso = [
+    "gitlab.com/VincentTam/huginn",
 ]

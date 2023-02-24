@@ -13,7 +13,8 @@ themesfile = "themes.txt"
 themesfile = "themes_short.txt"
 themes_list_url = "https://raw.githubusercontent.com/gohugoio/hugoThemesSiteBuilder/main/themes.txt"
 
-tags= sys.argv
+tags = sys.argv
+
 
 def find_tags(tags):
     print(tags)
@@ -29,10 +30,12 @@ def find_tags(tags):
     print_dict(tag_urls)
     write_tags_themes(tags_themes_file, tag_urls)
 
+
 def print_dict(d):
     print('-------------------- dict --------------------')
     for k in iter(d):
         print(f'{k}: {d[k]}')
+
 
 def read_toml(toml_url):
     with urllib.request.urlopen(toml_url) as response:
@@ -43,55 +46,57 @@ def read_toml(toml_url):
         return toml
 
 
-
-
-
 def load_themes_list(remote=False):
     str = load_themes(remote)
     print("---- str ---")
     print(str)
-    list = [ l.rstrip() for l in str.split('\n')]
+    list = [l.rstrip() for l in str.split('\n')]
     return list
+
+
 def load_themes(remote=False):
     if remote:
         with urllib.request.urlopen(themes_list_url) as response:
-                bytes = response.read()
-                return bytes.decode("utf-8")
+            bytes = response.read()
+            return bytes.decode("utf-8")
     else:
         with open(themesfile, "r+") as themes:
             return themes.read()
 
 
-#-----
+# -----
+
+def theme_2_url(theme):
+    if theme.startswith("github"):
+        repo = theme.replace("github.com/", "")
+        return f'https://raw.githubusercontent.com/{repo}/main/theme.toml'
+    if theme.startswith("gitlab"):
+        repo = theme.replace("gitlab.com/", "")
+        return f'https://gitlab.com/{repo}/-/raw/main/theme.toml?inline=false'
+    return None
+
 
 def read_theme(theme):
-
-    # https://gitlab.com/Kaligule/classless-blog/-/raw/main/theme.toml?inline=false
-        repo = theme.replace("github.com/","")
-        toml_url = f'https://raw.githubusercontent.com/{repo}/main/theme.toml'
-        print('------------------')
-        print(theme)
-        print('------------------')
+    toml_url = theme_2_url(theme)
+    if toml_url is not None:
         try:
             return read_toml(toml_url)
         except urllib.error.HTTPError as e:
-            # print("no main")
-            # print(e)
-            # print(toml_url)
             try:
                 toml_url_master = toml_url.replace("main", "master")
                 return read_toml(toml_url_master)
             except urllib.error.HTTPError as e:
                 print(f'theme {theme} not found')
-                # print(e)
-                # print(toml_url_master)
                 return None
         except Exception as e:
+            print(f'exception for theme {theme}:')
             print(e)
             return None
+
 
 def write_tags_themes(file_name, tag_urls, ):
     with open(file_name, "wb") as f:
         tomli_w.dump(tag_urls, f)
+
 
 find_tags(tags)
