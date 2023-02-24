@@ -18,14 +18,14 @@
       files = ["find_tags3_10.py"]
     </py-config>
     <py-script>
-      print('hello wordl!')
-      from find_tags3_10 import find_tags
+      from find_tags3_10 import find_themes_with_tags
+      r = find_themes_with_tags("bootstrap, blog, minimal")
+      print(r)
     </py-script>
 <div id="replOutput">output</div>
 <py-repl output="replOutput">
-    from find_tags3_10 import find_tags
-    hello = "Hello world!"
-    hello
+      from find_tags3_10 import find_themes_with_tags
+      find_themes_with_tags("bootstrap, blog, minimal")
 </py-repl>
   </body>
 </html>
