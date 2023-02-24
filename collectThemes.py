@@ -5,8 +5,10 @@ import urllib.request
 import tomllib
 from collections import defaultdict
 import sys
+import tomli_w
 
-remote = False
+tags_themes_file = 'theme_tags.toml'
+remote = True
 themesfile = "themes.txt"
 themesfile = "themes_short.txt"
 themes_list_url = "https://raw.githubusercontent.com/gohugoio/hugoThemesSiteBuilder/main/themes.txt"
@@ -22,12 +24,16 @@ def find_tags(tags):
         if theme_toml is not None:
             tags = theme_toml.get('tags', [])
             print(f'adding tags: {tags}')
-            tag_urls[theme] = tags
+            for tag in tags:
+                tag_urls[tag].append(theme)
     print_dict(tag_urls)
+    write_tags_themes(tags_themes_file, tag_urls)
+
 def print_dict(d):
     print('-------------------- dict --------------------')
     for k in iter(d):
         print(f'{k}: {d[k]}')
+
 def read_toml(toml_url):
     with urllib.request.urlopen(toml_url) as response:
         toml_bytes = response.read()
@@ -35,6 +41,8 @@ def read_toml(toml_url):
 
         toml = tomllib.loads(toml_str)
         return toml
+
+
 
 
 
@@ -57,6 +65,8 @@ def load_themes(remote=False):
 #-----
 
 def read_theme(theme):
+
+    # https://gitlab.com/Kaligule/classless-blog/-/raw/main/theme.toml?inline=false
         repo = theme.replace("github.com/","")
         toml_url = f'https://raw.githubusercontent.com/{repo}/main/theme.toml'
         print('------------------')
@@ -69,13 +79,19 @@ def read_theme(theme):
             # print(e)
             # print(toml_url)
             try:
-                toml_url_master = toml_url.replace("main","master")
+                toml_url_master = toml_url.replace("main", "master")
                 return read_toml(toml_url_master)
             except urllib.error.HTTPError as e:
                 print(f'theme {theme} not found')
                 # print(e)
                 # print(toml_url_master)
                 return None
+        except Exception as e:
+            print(e)
+            return None
 
+def write_tags_themes(file_name, tag_urls, ):
+    with open(file_name, "wb") as f:
+        tomli_w.dump(tag_urls, f)
 
 find_tags(tags)
