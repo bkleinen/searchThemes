@@ -1,0 +1,5 @@
+github.com/thegeeklab/hugo-geekblog
+github.com/thegeeklab/hugo-geekdoc
+github.com/ThemeTony/hugo-theme-tony
+github.com/theNewDynamic/gohugo-theme-ananke
+github.com/thingsym/hugo-theme-techdoc
