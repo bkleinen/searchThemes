@@ -1,12 +1,9 @@
-import tomllib
 import sys
-
-tags = sys.argv[1:]
-
-if len(tags) < 2:
-    print('usage: find_tags <tags>')
-    exit(2)
-
+# new in python 3.11, use other library for pyscript:
+# import tomllib
+import tomlkit
+toml_lib = tomlkit
+tags = ["minimal", "blog", "bootstrap"]
 tags_themes_file = 'theme_tags.toml'
 
 
@@ -26,7 +23,7 @@ def find_tags(tags):
 
 def read_list(file=tags_themes_file):
     with open(file, "r+b") as f:
-        tags_themes = tomllib.load(f)
+        tags_themes = toml_lib.load(f)
         return tags_themes
 
 result = find_tags(tags)
